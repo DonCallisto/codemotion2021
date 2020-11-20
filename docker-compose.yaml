@@ -1,0 +1,10 @@
+version: '2'
+
+services:
+  codemotion2021:
+    build: docker/
+    volumes:
+      - ./:/var/codemotion2021
+    working_dir: /var/codemotion2021
+    user: user
+    tty: true
