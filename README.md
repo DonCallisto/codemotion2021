@@ -15,6 +15,12 @@ docker-compose up -d
 docker-compose exec codemotion2021 bash
 ```
 
+Then install all vendors
+
+```
+composer.phar install
+```
+
 Master branch has only the `Invoice` trivial class, so if you want to navigate through all the examples, please check out
 the [tags](https://github.com/DonCallisto/codemotion2021/tags).
 
