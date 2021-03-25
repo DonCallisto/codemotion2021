@@ -3,7 +3,11 @@ FROM php:7.4-cli
 MAINTAINER Samuele "DonCallisto" Lilli <samuele.lilli@gmail.com>
 
 RUN apt-get update \
-    && apt-get install -y git
+    && apt-get install -y \
+    git \
+    zlib1g-dev \
+    libzip-dev \
+    unzip
 
 RUN mkdir /user \
     && useradd -d /user -s /bin/bash user \
